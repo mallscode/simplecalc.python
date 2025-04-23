@@ -18,9 +18,9 @@ def operacoes():
             b = float(input("Digite o segundo número da operação: "))
             print(f"{a:.2f} x {b:.2f} = {a*b:.2f}")
         elif operacao in ['divisao', 'divisão']:
+            a = float(input("Digite o primeiro número da operação: "))
+            b = float(input("Digite o segundo número da operação: "))
             if (b != 0):
-                a = float(input("Digite o primeiro número da operação: "))
-                b = float(input("Digite o segundo número da operação: "))
                 print(f"{a:.2f} / {b:.2f} = {a/b:.2f}")
             else:
                 print("Esta divisão não é possível.")
@@ -37,6 +37,7 @@ def operacoes():
         print('Números inválidos.')
 
 def bhaskara():
+   print("ax+bx+c=0")
    try:
         a = float(input("Digite o valor do coeficiente A: "))
         if a == 0:
@@ -76,4 +77,5 @@ while True:
     elif conta in ['sair']:
         break
     else:
-        print('Opção inválida.')
+        print('Opção inválida.')        
+
